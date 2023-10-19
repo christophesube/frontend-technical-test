@@ -1,8 +1,6 @@
 import type { ReactElement } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Logo from "../assets/lbc-logo.webp";
 import styles from "../styles/Home.module.css";
+import MessagesList from "../components/MessagesList/MessagesList";
 
 const Home = (): ReactElement => {
   const year = new Date().getFullYear();
@@ -10,6 +8,7 @@ const Home = (): ReactElement => {
   return (
     <div className={styles.container}>
       <h1>Hello</h1>
+      <MessagesList />
     </div>
   );
 };
