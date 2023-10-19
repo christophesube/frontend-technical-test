@@ -1,14 +1,21 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { Message } from "../types/message";
+import { actionSetUserIdLogged } from "./actions";
+import { actionGetConversations } from "./thunks";
+import { Conversation } from "../types/conversation";
 
-const initialState: Message[] = [
-  {
-    id: 1,
-    conversationId: 3,
-    authorId: 4,
-    timestamp: 4,
-    body: "coucou",
-  },
-];
+interface initialStateProps {
+  conversations: Conversation[];
+  messages: Message[];
+}
 
-export const reducerMessages = createReducer(initialState, (builder) => {});
+const initialState: initialStateProps = {
+  conversations: [],
+  messages: [],
+};
+
+export const reducerMessages = createReducer(initialState, (builder) => {
+  builder.addCase(actionGetConversations.fulfilled, (state, action) => {
+    state.conversations = action.payload.data;
+  });
+});
