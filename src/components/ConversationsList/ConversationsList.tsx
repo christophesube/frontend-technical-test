@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import Conversation from "../Conversation/Conversation";
+import styles from "../../styles/ConversationsList.module.css";
+import Link from "next/link";
 
 const ConversationsList = () => {
   const conversations = useSelector(
@@ -11,11 +13,15 @@ const ConversationsList = () => {
   return (
     <div>
       {conversations.map((item) => (
-        <Conversation
+        <Link
+          className={styles.global}
           key={item.id}
-          name={item.senderNickname}
-          timestamp={item.lastMessageTimestamp}
-        />
+          href={`/conversation/${item.id}`}>
+          <Conversation
+            name={item.senderNickname}
+            timestamp={item.lastMessageTimestamp}
+          />
+        </Link>
       ))}
     </div>
   );
