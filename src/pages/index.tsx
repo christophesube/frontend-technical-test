@@ -16,7 +16,6 @@ const Home = (): ReactElement => {
 
   return (
     <div className={styles.container}>
-      <h1>Hello</h1>
       <ConversationsList />
     </div>
   );
