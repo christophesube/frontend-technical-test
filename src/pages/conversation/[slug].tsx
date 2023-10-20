@@ -8,6 +8,7 @@ import Message from "../../components/Message/Message";
 import MessageMe from "../../components/Message/MessageMe";
 import { getLoggedUserId } from "../../utils/getLoggedUserId";
 import { actionSetinputValue } from "../../store/actions";
+import Loader from "../../components/Loader/Loader";
 
 export default function Page() {
   const router = useRouter();
@@ -42,15 +43,17 @@ export default function Page() {
           <span>Last message : today at 2:45pm</span>
         </div>
         <div className={styles.messages__container_messages}>
-          {loaded
-            ? messages.map((message) =>
-                myId === message.authorId ? (
-                  <MessageMe key={message.id} {...message} />
-                ) : (
-                  <Message key={message.id} {...message} />
-                )
+          {loaded ? (
+            messages.map((message) =>
+              myId === message.authorId ? (
+                <MessageMe key={message.id} {...message} />
+              ) : (
+                <Message key={message.id} {...message} />
               )
-            : "non chargé"}
+            )
+          ) : (
+            <Loader />
+          )}
         </div>
       </div>
       <form
