@@ -10,8 +10,6 @@ const Message = (message: Message) => {
   const conversations = useSelector(
     (state: RootState) => state.reducerMessages.conversations
   );
-  console.log(idConv);
-  console.log(conversations);
   let author: string;
   conversations.forEach((conversation) => {
     if (conversation.id === idConv) {

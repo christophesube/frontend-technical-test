@@ -7,9 +7,11 @@ import styles from "../../styles/MessagesList.module.css";
 import Message from "../../components/Message/Message";
 import MessageMe from "../../components/Message/MessageMe";
 import { getLoggedUserId } from "../../utils/getLoggedUserId";
+import { actionSetinputValue } from "../../store/actions";
 
 export default function Page() {
   const router = useRouter();
+  const myId = getLoggedUserId();
   const slug = parseInt(router.query.slug);
   const dispatch = useDispatch() as AppDispatch;
   const messages = useSelector(
@@ -18,13 +20,20 @@ export default function Page() {
   const loaded = useSelector(
     (state: RootState) => state.reducerMessages.messagesAreLoaded
   );
-  const myId = getLoggedUserId();
+  const inputValue = useSelector(
+    (state: RootState) => state.reducerMessages.inputValue
+  );
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("sent");
+  };
+
   useEffect(() => {
     dispatch(actionGetMessages(router.query.slug));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(slug);
   return (
     <div className={styles.messages__container}>
       <div className={styles.messages__subcontainer}>
@@ -44,9 +53,19 @@ export default function Page() {
             : "non chargé"}
         </div>
       </div>
-      <form className={styles.messages__form} action='#'>
-        <input type='text' placeholder='Entrez votre message' />
-        <button type='button'>Envoyer</button>
+      <form
+        className={styles.messages__form}
+        action='#'
+        onSubmit={handleSubmit}>
+        <input
+          onChange={(event) =>
+            dispatch(actionSetinputValue(event.target.value))
+          }
+          value={inputValue}
+          type='text'
+          placeholder='Entrez votre message'
+        />
+        <button type='submit'>Envoyer</button>
       </form>
     </div>
   );
