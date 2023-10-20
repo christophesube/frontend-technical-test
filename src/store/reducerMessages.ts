@@ -40,5 +40,6 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     .addCase(actionCreateMessage.fulfilled, (state, action) => {
       console.log(action.payload.data);
       state.messages.push(action.payload.data);
+      state.inputValue = "";
     });
 });
