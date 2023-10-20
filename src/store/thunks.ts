@@ -12,3 +12,11 @@ export const actionGetConversations = createAsyncThunk(
     return results;
   }
 );
+
+export const actionGetMessages = createAsyncThunk(
+  "GET_MESSAGES",
+  async (arg) => {
+    const results = await axios(`http://localhost:3005/messages/${arg}`);
+    return results;
+  }
+);

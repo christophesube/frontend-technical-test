@@ -1,0 +1,31 @@
+.message__body {
+  background-color: rgb(75, 167, 247);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.message__container {
+  margin-right: 35px;
+}
+
+.message__author {
+  font-size: 0.9em;
+}
+
+.message__container_me {
+  margin-right: 0px;
+}
+
+.message__author_me {
+  display: none;
+}
+
+.message__body_me {
+  background-color: rgb(195, 208, 219);
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 5px;
+  font-size: 0.9em;
+}

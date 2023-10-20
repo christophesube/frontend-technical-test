@@ -8,7 +8,6 @@ const ConversationsList = () => {
   const conversations = useSelector(
     (state: RootState) => state.reducerMessages.conversations
   );
-  console.log(conversations);
 
   return (
     <div>
