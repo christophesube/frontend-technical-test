@@ -10,6 +10,7 @@ import { getLoggedUserId } from "../../utils/getLoggedUserId";
 
 export default function Page() {
   const router = useRouter();
+  const slug = parseInt(router.query.slug);
   const dispatch = useDispatch() as AppDispatch;
   const messages = useSelector(
     (state: RootState) => state.reducerMessages.messages
@@ -18,13 +19,12 @@ export default function Page() {
     (state: RootState) => state.reducerMessages.messagesAreLoaded
   );
   const myId = getLoggedUserId();
-
   useEffect(() => {
-    console.log(loaded);
     dispatch(actionGetMessages(router.query.slug));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  console.log(slug);
   return (
     <div className={styles.messages__container}>
       <div className={styles.messages__subcontainer}>
@@ -36,9 +36,9 @@ export default function Page() {
           {loaded
             ? messages.map((message) =>
                 myId === message.authorId ? (
-                  <Message key={message.id} {...message} />
-                ) : (
                   <MessageMe key={message.id} {...message} />
+                ) : (
+                  <Message key={message.id} {...message} />
                 )
               )
             : "non chargé"}

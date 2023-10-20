@@ -23,7 +23,6 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     })
     .addCase(actionGetMessages.fulfilled, (state, action) => {
       state.messages = action.payload.data;
-      console.log(state.messages);
       state.messagesAreLoaded = true;
     });
 });

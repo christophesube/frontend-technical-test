@@ -1,11 +1,32 @@
+import { useSelector } from "react-redux";
 import styles from "../../styles/Message.module.css";
 import { Message } from "../../types/message";
-import { getLoggedUserId } from "../../utils/getLoggedUserId";
+import { RootState } from "../../store/store";
+import { useRouter } from "next/router";
 
 const Message = (message: Message) => {
+  const router = useRouter();
+  const idConv = parseInt(router.query.slug);
+  const conversations = useSelector(
+    (state: RootState) => state.reducerMessages.conversations
+  );
+  console.log(idConv);
+  console.log(conversations);
+  let author: string;
+  conversations.forEach((conversation) => {
+    if (conversation.id === idConv) {
+      if (message.authorId === conversation.recipientId) {
+        author = conversation.recipientNickname;
+      }
+      if (message.authorId === conversation.senderId) {
+        author = conversation.senderNickname;
+      }
+    }
+  });
+
   return (
     <div className={styles.message__container}>
-      <span className={styles.message__author}>{message.authorId}</span>
+      <span className={styles.message__author}>{author}</span>
       <p className={styles.message__body}>{message.body}</p>
     </div>
   );

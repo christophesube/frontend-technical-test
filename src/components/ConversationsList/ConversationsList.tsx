@@ -3,11 +3,13 @@ import { RootState } from "../../store/store";
 import Conversation from "../Conversation/Conversation";
 import styles from "../../styles/ConversationsList.module.css";
 import Link from "next/link";
+import { getLoggedUserId } from "../../utils/getLoggedUserId";
 
 const ConversationsList = () => {
   const conversations = useSelector(
     (state: RootState) => state.reducerMessages.conversations
   );
+  const myId = getLoggedUserId();
 
   return (
     <div>
@@ -17,7 +19,11 @@ const ConversationsList = () => {
           key={item.id}
           href={`/conversation/${item.id}`}>
           <Conversation
-            name={item.senderNickname}
+            name={
+              myId === item.senderId
+                ? "Discussion avec : " + item.recipientNickname
+                : "Discussion avec : " + item.senderNickname
+            }
             timestamp={item.lastMessageTimestamp}
           />
         </Link>
