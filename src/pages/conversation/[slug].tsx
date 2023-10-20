@@ -12,8 +12,8 @@ import Loader from "../../components/Loader/Loader";
 
 export default function Page() {
   const router = useRouter();
+  const idConv = parseInt(router.query.slug);
   const myId = getLoggedUserId();
-  const slug = parseInt(router.query.slug);
   const dispatch = useDispatch() as AppDispatch;
   const messages = useSelector(
     (state: RootState) => state.reducerMessages.messages
@@ -24,6 +24,22 @@ export default function Page() {
   const inputValue = useSelector(
     (state: RootState) => state.reducerMessages.inputValue
   );
+  const conversations = useSelector(
+    (state: RootState) => state.reducerMessages.conversations
+  );
+  let author: string;
+
+  // get the name of the other member of the conversation
+  conversations.forEach((conversation) => {
+    if (conversation.id === idConv) {
+      if (myId === conversation.recipientId) {
+        author = conversation.senderNickname;
+      }
+      if (myId === conversation.senderId) {
+        author = conversation.recipientNickname;
+      }
+    }
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,7 +55,7 @@ export default function Page() {
     <div className={styles.messages__container}>
       <div className={styles.messages__subcontainer}>
         <div className={styles.messages__container_header}>
-          <span>Jane Doe - You</span>
+          <span>{author} - You</span>
           <span>Last message : today at 2:45pm</span>
         </div>
         <div className={styles.messages__container_messages}>
