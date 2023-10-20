@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { actionGetMessages } from "../../store/thunks";
+import { actionCreateMessage, actionGetMessages } from "../../store/thunks";
 import { AppDispatch, RootState } from "../../store/store";
 import styles from "../../styles/MessagesList.module.css";
 import Message from "../../components/Message/Message";
@@ -26,7 +26,7 @@ export default function Page() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("sent");
+    dispatch(actionCreateMessage(router.query.slug));
   };
 
   useEffect(() => {

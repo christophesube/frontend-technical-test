@@ -1,7 +1,11 @@
 import { createReducer } from "@reduxjs/toolkit";
 import { Message } from "../types/message";
-import { actionSetUserIdLogged, actionSetinputValue } from "./actions";
-import { actionGetConversations, actionGetMessages } from "./thunks";
+import { actionSetinputValue } from "./actions";
+import {
+  actionCreateMessage,
+  actionGetConversations,
+  actionGetMessages,
+} from "./thunks";
 import { Conversation } from "../types/conversation";
 
 interface initialStateProps {
@@ -29,5 +33,9 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     })
     .addCase(actionSetinputValue, (state, action) => {
       state.inputValue = action.payload;
+    })
+    .addCase(actionCreateMessage.fulfilled, (state, action) => {
+      console.log(action.payload.data);
+      state.messages.push(action.payload.data);
     });
 });
