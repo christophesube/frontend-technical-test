@@ -491,6 +491,13 @@
       "recipientNickname": "Patrick",
       "lastMessageTimestamp": 1697993688891,
       "id": 77
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1697995928560,
+      "id": 78
     }
   ],
   "messages": [
@@ -866,6 +873,48 @@
       "authorId": 1,
       "conversationId": 76,
       "id": 62
+    },
+    {
+      "body": "Bonjour",
+      "timestamp": 1697995934402,
+      "authorId": 1,
+      "conversationId": 3,
+      "id": 63
+    },
+    {
+      "body": "ca va ? ",
+      "timestamp": 1697995939785,
+      "authorId": 1,
+      "conversationId": 3,
+      "id": 64
+    },
+    {
+      "body": "a",
+      "timestamp": 1697995977510,
+      "authorId": 1,
+      "conversationId": 1,
+      "id": 65
+    },
+    {
+      "body": "a",
+      "timestamp": 1697995978646,
+      "authorId": 1,
+      "conversationId": 1,
+      "id": 66
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1697996009760,
+      "authorId": 1,
+      "conversationId": 2,
+      "id": 67
+    },
+    {
+      "body": "Tu vas bien ?",
+      "timestamp": 1697996198906,
+      "authorId": 1,
+      "conversationId": 2,
+      "id": 68
     }
   ],
   "users": [

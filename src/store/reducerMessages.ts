@@ -63,7 +63,6 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.selectedUser = action.payload;
     })
     .addCase(actionCreateMessage.fulfilled, (state, action) => {
-      console.log(action.payload.data);
       state.messages.push(action.payload.data);
       state.inputValue = "";
     })
