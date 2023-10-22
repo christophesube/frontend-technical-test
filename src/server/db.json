@@ -498,6 +498,13 @@
       "recipientNickname": "Patrick",
       "lastMessageTimestamp": 1697995928560,
       "id": 78
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1697997063243,
+      "id": 79
     }
   ],
   "messages": [
@@ -915,6 +922,13 @@
       "authorId": 1,
       "conversationId": 2,
       "id": 68
+    },
+    {
+      "body": "Ca va ? ",
+      "timestamp": 1697997066885,
+      "authorId": 1,
+      "conversationId": 79,
+      "id": 69
     }
   ],
   "users": [
