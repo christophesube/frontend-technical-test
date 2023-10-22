@@ -19,9 +19,7 @@ const Conversation = ({ name, timestamp }) => {
       />
       <div className={styles.subcontainer}>
         <span>{name}</span>
-        <span className={styles.timestamp}>
-          Dernier message : en {month}, à {hour}
-        </span>
+        <span className={styles.timestamp}>Dernier message : en {month}</span>
       </div>
     </div>
   );

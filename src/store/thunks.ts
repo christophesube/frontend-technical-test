@@ -2,6 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { getLoggedUserId } from "../utils/getLoggedUserId";
 import { RootState } from "./store";
+import { create } from "domain";
 
 export const actionGetConversations = createAsyncThunk(
   "GET_CONVERSATIONS",
@@ -11,6 +12,29 @@ export const actionGetConversations = createAsyncThunk(
       `http://localhost:3005/conversations/${userIdLogged}`
     );
     return results;
+  }
+);
+
+export const actionCreateConversations = createAsyncThunk(
+  "CREATE_CONVERSATION",
+  async (_, thunkApi) => {
+    const state = thunkApi.getState() as RootState;
+    const users = state.reducerMessages.users;
+    const timestamp = Date.now();
+    const myId = getLoggedUserId();
+    const selectedUser = state.reducerMessages.selectedUser;
+    const userToFind = users.find((user) => user.id == selectedUser);
+    const RecipientNickname = userToFind.nickname;
+    const result = await axios.post(
+      `http://localhost:3005/conversations/${selectedUser}`,
+      {
+        senderId: myId,
+        recipientId: selectedUser,
+        recipientNickname: RecipientNickname,
+        lastMessageTimestamp: timestamp,
+      }
+    );
+    return result;
   }
 );
 
@@ -46,3 +70,8 @@ export const actionDeleteMessage = createAsyncThunk(
     return results;
   }
 );
+
+export const actionGetAllUsers = createAsyncThunk("GET_USERS", async () => {
+  const results = await axios("http://localhost:3005/users");
+  return results;
+});
