@@ -1,0 +1,11 @@
+.container {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  color: red;
+}

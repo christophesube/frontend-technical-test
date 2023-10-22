@@ -16,6 +16,7 @@ interface initialStateProps {
   conversations: Conversation[];
   messages: Message[];
   conversationsAreLoaded: boolean;
+  conversationsisLoading: boolean;
   messagesAreLoaded: boolean;
   inputValue: string;
   users: User[];
@@ -25,7 +26,8 @@ interface initialStateProps {
 const initialState: initialStateProps = {
   conversations: [],
   messages: [],
-  conversationsAreLoaded: false,
+  conversationsAreLoaded: true,
+  conversationsisLoading: false,
   messagesAreLoaded: false,
   inputValue: "",
   users: [],
@@ -35,8 +37,17 @@ const initialState: initialStateProps = {
 export const reducerMessages = createReducer(initialState, (builder) => {
   builder
     .addCase(actionGetConversations.fulfilled, (state, action) => {
-      state.conversations = action.payload.data;
       state.conversationsAreLoaded = true;
+      state.conversationsisLoading = false;
+      state.conversations = action.payload.data;
+    })
+    .addCase(actionGetConversations.pending, (state, action) => {
+      state.conversationsisLoading = true;
+      state.conversationsAreLoaded = false;
+    })
+    .addCase(actionGetConversations.rejected, (state, action) => {
+      state.conversationsAreLoaded = false;
+      state.conversationsisLoading = false;
     })
     .addCase(actionCreateConversations.fulfilled, (state, action) => {
       state.conversations.push(action.payload.data);

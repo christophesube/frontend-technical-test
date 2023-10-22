@@ -1,6 +1,7 @@
 import { useEffect, type ReactElement } from "react";
 import styles from "../styles/Home.module.css";
 import ConversationsList from "../components/ConversationsList/ConversationsList";
+import Error from "../components/Error/Error";
 import { useDispatch, useSelector } from "react-redux";
 import { actionGetAllUsers, actionGetConversations } from "../store/thunks";
 import { AppDispatch, RootState } from "../store/store";
@@ -8,10 +9,12 @@ import Loader from "../components/Loader/Loader";
 import CreateConversation from "../components/CreateConversation/CreateConversation";
 
 const Home = (): ReactElement => {
-  const year = new Date().getFullYear();
   const dispatch: AppDispatch = useDispatch();
   const conversationAreLoaded = useSelector(
     (state: RootState) => state.reducerMessages.conversationsAreLoaded
+  );
+  const isLoading = useSelector(
+    (state: RootState) => state.reducerMessages.conversationsisLoading
   );
 
   useEffect(() => {
@@ -22,8 +25,10 @@ const Home = (): ReactElement => {
 
   return (
     <div className={styles.container}>
-      {conversationAreLoaded ? <ConversationsList /> : <Loader />}
-      <CreateConversation />
+      {!conversationAreLoaded && <Error />}
+      {isLoading && <Loader />}
+      {conversationAreLoaded && !isLoading && <ConversationsList />}
+      {conversationAreLoaded ? <CreateConversation /> : null}
     </div>
   );
 };
