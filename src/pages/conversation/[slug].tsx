@@ -9,6 +9,7 @@ import MessageMe from "../../components/Message/MessageMe";
 import { getLoggedUserId } from "../../utils/getLoggedUserId";
 import { actionSetinputValue } from "../../store/actions";
 import Loader from "../../components/Loader/Loader";
+import Delete from "../../components/Delete/Delete";
 
 export default function Page() {
   const router = useRouter();
@@ -50,7 +51,6 @@ export default function Page() {
     dispatch(actionGetMessages(router.query.slug));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <div className={styles.messages__container}>
       <div className={styles.messages__subcontainer}>
@@ -62,7 +62,10 @@ export default function Page() {
           {loaded ? (
             messages.map((message) =>
               myId === message.authorId ? (
-                <MessageMe key={message.id} {...message} />
+                <div className={styles.messages__me}>
+                  <MessageMe key={message.id} {...message} />
+                  <Delete id={message.id} />
+                </div>
               ) : (
                 <Message key={message.id} {...message} />
               )

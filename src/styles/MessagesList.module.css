@@ -40,3 +40,9 @@
   margin-right: 20px;
   border: solid 1px rgb(149, 149, 149);
 }
+
+.messages__me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}

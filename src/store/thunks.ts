@@ -24,7 +24,7 @@ export const actionGetMessages = createAsyncThunk(
 
 export const actionCreateMessage = createAsyncThunk(
   "CREATE_MESSAGE",
-  async (arg, thunkApi) => {
+  async (arg: string, thunkApi) => {
     const userIdLogged = getLoggedUserId();
     const state = thunkApi.getState() as RootState;
     const inputValue = state.reducerMessages.inputValue;
@@ -33,7 +33,16 @@ export const actionCreateMessage = createAsyncThunk(
       body: inputValue,
       timestamp: timestamp,
       authorId: userIdLogged,
+      conversationId: parseInt(arg),
     });
+    return results;
+  }
+);
+
+export const actionDeleteMessage = createAsyncThunk(
+  "DELETE_MESSAGE",
+  async (arg: number) => {
+    const results = await axios.delete(`http://localhost:3005/message/${arg}`);
     return results;
   }
 );

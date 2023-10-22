@@ -3,6 +3,7 @@ import { Message } from "../types/message";
 import { actionSetinputValue } from "./actions";
 import {
   actionCreateMessage,
+  actionDeleteMessage,
   actionGetConversations,
   actionGetMessages,
 } from "./thunks";
@@ -41,5 +42,9 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       console.log(action.payload.data);
       state.messages.push(action.payload.data);
       state.inputValue = "";
+    })
+    .addCase(actionDeleteMessage.fulfilled, (state, action) => {})
+    .addCase(actionDeleteMessage.rejected, (state, action) => {
+      console.log(action);
     });
 });
