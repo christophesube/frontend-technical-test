@@ -75,3 +75,11 @@ export const actionGetAllUsers = createAsyncThunk("GET_USERS", async () => {
   const results = await axios("http://localhost:3005/users");
   return results;
 });
+
+export const actionDeleteConversations = createAsyncThunk(
+  "DELETE_CONVERSATION",
+  async () => {
+    const results = await axios.delete(`http://localhost:3005/conversation/78`);
+    return results;
+  }
+);

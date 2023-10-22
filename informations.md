@@ -6,5 +6,5 @@
 - I added an error message if the answer of fetching data is rejected.
 - The logged user can be managed with getLoggedUserId() function.
 - The logged user can select a conversation and create new messages.
-- The logged user can create a new conversation by selecting another user from API (/users)
+- The logged user can create a new conversation by selecting another user from API (/users) (sorry about the lot of conversations created. I tried to delete them but I guess the delete endpoint is not working)
 - I added functionnality to delete my own messages, but I have a 404 on the delete endpoint, and for now I didn't find the issue.

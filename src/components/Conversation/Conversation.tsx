@@ -5,8 +5,10 @@ import { getFrenchMonth } from "../../utils/getFrenchMonth";
 import { getFrenchDate } from "../../utils/getFrenchDate";
 
 const Conversation = ({ name, timestamp }) => {
+  if (typeof timestamp == "undefined") {
+    timestamp = Date.now();
+  }
   const month = getFrenchMonth(timestamp);
-  const hour = getFrenchDate(timestamp);
 
   return (
     <div className={styles.container}>

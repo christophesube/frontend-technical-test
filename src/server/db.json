@@ -505,6 +505,13 @@
       "recipientNickname": "Patrick",
       "lastMessageTimestamp": 1697997063243,
       "id": 79
+    },
+    {
+      "senderId": 1,
+      "recipientId": "2",
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698003097787,
+      "id": 80
     }
   ],
   "messages": [
@@ -929,6 +936,97 @@
       "authorId": 1,
       "conversationId": 79,
       "id": 69
+    },
+    {
+      "body": "Ca va ? ",
+      "timestamp": 1698001345041,
+      "authorId": 1,
+      "conversationId": 77,
+      "id": 70
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698001756572,
+      "authorId": 1,
+      "conversationId": 35,
+      "id": 71
+    },
+    {
+      "body": "HEllo",
+      "timestamp": 1698002651472,
+      "authorId": 1,
+      "conversationId": 74,
+      "id": 72
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698002692010,
+      "authorId": 1,
+      "conversationId": 73,
+      "id": 73
+    },
+    {
+      "body": "Ca va ",
+      "timestamp": 1698002694531,
+      "authorId": 1,
+      "conversationId": 73,
+      "id": 74
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698002705858,
+      "authorId": 2,
+      "conversationId": 65,
+      "id": 75
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698002717621,
+      "authorId": 3,
+      "conversationId": 29,
+      "id": 76
+    },
+    {
+      "body": "Ca va et toi ?",
+      "timestamp": 1698002723323,
+      "authorId": 3,
+      "conversationId": 2,
+      "id": 77
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698002742990,
+      "authorId": 3,
+      "conversationId": 30,
+      "id": 78
+    },
+    {
+      "body": "Salut tu vas bien ?",
+      "timestamp": 1698003039119,
+      "authorId": 1,
+      "conversationId": 36,
+      "id": 79
+    },
+    {
+      "body": "Yes super",
+      "timestamp": 1698003042449,
+      "authorId": 1,
+      "conversationId": 36,
+      "id": 80
+    },
+    {
+      "body": "Hello",
+      "timestamp": 1698003087700,
+      "authorId": 1,
+      "conversationId": 71,
+      "id": 81
+    },
+    {
+      "body": "Salut Jeremie ca va ? ",
+      "timestamp": 1698003105138,
+      "authorId": 1,
+      "conversationId": 80,
+      "id": 82
     }
   ],
   "users": [

@@ -3,7 +3,11 @@ import styles from "../styles/Home.module.css";
 import ConversationsList from "../components/ConversationsList/ConversationsList";
 import Error from "../components/Error/Error";
 import { useDispatch, useSelector } from "react-redux";
-import { actionGetAllUsers, actionGetConversations } from "../store/thunks";
+import {
+  actionDeleteConversations,
+  actionGetAllUsers,
+  actionGetConversations,
+} from "../store/thunks";
 import { AppDispatch, RootState } from "../store/store";
 import Loader from "../components/Loader/Loader";
 import CreateConversation from "../components/CreateConversation/CreateConversation";
