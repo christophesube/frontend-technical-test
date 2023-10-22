@@ -21,6 +21,10 @@
   margin-bottom: 20px;
 }
 
+.messages__container_title {
+  font-style: italic;
+}
+
 .messages__container_messages {
   display: flex;
   flex-direction: column;

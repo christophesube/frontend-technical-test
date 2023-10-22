@@ -10,6 +10,7 @@ import { getLoggedUserId } from "../../utils/getLoggedUserId";
 import { actionSetinputValue } from "../../store/actions";
 import Loader from "../../components/Loader/Loader";
 import Delete from "../../components/Delete/Delete";
+import Link from "next/link";
 
 export default function Page() {
   const router = useRouter();
@@ -55,8 +56,12 @@ export default function Page() {
     <div className={styles.messages__container}>
       <div className={styles.messages__subcontainer}>
         <div className={styles.messages__container_header}>
-          <span>{author} - You</span>
-          <span>Last message : today at 2:45pm</span>
+          <Link href='/'>
+            <span className={styles.messages__container_back}>Retour</span>
+          </Link>
+          <span className={styles.messages__container_title}>
+            Conversation avec {author}
+          </span>
         </div>
         <div className={styles.messages__container_messages}>
           {loaded ? (

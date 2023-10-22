@@ -44,7 +44,5 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.inputValue = "";
     })
     .addCase(actionDeleteMessage.fulfilled, (state, action) => {})
-    .addCase(actionDeleteMessage.rejected, (state, action) => {
-      console.log(action);
-    });
+    .addCase(actionDeleteMessage.rejected, (state, action) => {});
 });
