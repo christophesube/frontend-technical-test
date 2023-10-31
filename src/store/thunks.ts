@@ -17,19 +17,18 @@ export const actionGetConversations = createAsyncThunk(
 
 export const actionCreateConversations = createAsyncThunk(
   "CREATE_CONVERSATION",
-  async (_, thunkApi) => {
+  async (arg: number, thunkApi) => {
     const state = thunkApi.getState() as RootState;
     const users = state.reducerMessages.users;
     const timestamp = Date.now();
     const myId = getLoggedUserId();
-    const selectedUser = state.reducerMessages.selectedUser;
-    const userToFind = users.find((user) => user.id == selectedUser);
+    const userToFind = users.find((user) => user.id == arg);
     const RecipientNickname = userToFind.nickname;
     const result = await axios.post(
-      `http://localhost:3005/conversations/${selectedUser}`,
+      `http://localhost:3005/conversations/${arg}`,
       {
         senderId: myId,
-        recipientId: selectedUser,
+        recipientId: arg,
         recipientNickname: RecipientNickname,
         lastMessageTimestamp: timestamp,
       }

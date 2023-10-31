@@ -40,17 +40,101 @@
     },
     {
       "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698336633171,
+      "recipientId": "2",
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698777867315,
       "id": 6
     },
     {
       "senderId": 1,
-      "recipientId": "1",
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698336646412,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698777869651,
       "id": 7
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698777872950,
+      "id": 8
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698777875097,
+      "id": 9
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698777875514,
+      "id": 10
+    },
+    {
+      "senderId": 1,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698777879580,
+      "id": 11
+    },
+    {
+      "senderId": 1,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698777881005,
+      "id": 12
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698779082067,
+      "id": 13
+    },
+    {
+      "senderId": 1,
+      "recipientId": "3",
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698779845260,
+      "id": 14
+    },
+    {
+      "senderId": 1,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698779856024,
+      "id": 15
+    },
+    {
+      "senderId": 1,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698780084868,
+      "id": 16
+    },
+    {
+      "senderId": 1,
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "lastMessageTimestamp": 1698780285529,
+      "id": 17
+    },
+    {
+      "senderId": 1,
+      "recipientId": "2",
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698780291478,
+      "id": 18
+    },
+    {
+      "senderId": 1,
+      "recipientId": "4",
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698780320791,
+      "id": 19
     }
   ],
   "messages": [

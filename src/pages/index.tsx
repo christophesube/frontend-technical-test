@@ -30,9 +30,11 @@ const Home = (): ReactElement => {
   return (
     <div className={styles.container}>
       <div className={styles.subcontainer}>
-        {!conversationAreLoaded && <Error />}
-        {isLoading && <Loader />}
-        {conversationAreLoaded && !isLoading && <ConversationsList />}
+        <div className={styles.conversationsContainer}>
+          {!conversationAreLoaded && <Error />}
+          {isLoading && <Loader />}
+          {conversationAreLoaded && !isLoading && <ConversationsList />}
+        </div>
         {conversationAreLoaded ? <CreateConversation /> : null}
       </div>
     </div>
