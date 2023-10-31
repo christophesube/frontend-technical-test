@@ -34,7 +34,8 @@ export const actionCreateConversations = createAsyncThunk(
         lastMessageTimestamp: timestamp,
       }
     );
-    return result;
+    const data = result.data;
+    return data;
   }
 );
 
@@ -60,7 +61,8 @@ export const actionCreateMessage = createAsyncThunk(
       authorId: userIdLogged,
       conversationId: parseInt(arg),
     });
-    return results;
+    const data = results.data;
+    return data;
   }
 );
 

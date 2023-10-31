@@ -52,7 +52,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.conversationsisLoading = false;
     })
     .addCase(actionCreateConversations.fulfilled, (state, action) => {
-      state.conversations.push(action.payload.data);
+      state.conversations.push(action.payload);
     })
     .addCase(actionGetMessages.fulfilled, (state, action) => {
       state.messages = action.payload;
@@ -66,7 +66,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.selectedUser = action.payload;
     })
     .addCase(actionCreateMessage.fulfilled, (state, action) => {
-      state.messages.push(action.payload.data);
+      state.messages.push(action.payload);
       state.inputValue = "";
     })
     .addCase(actionGetAllUsers.fulfilled, (state, action) => {

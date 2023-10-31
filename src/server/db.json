@@ -156,6 +156,20 @@
       "recipientNickname": "Jeremie",
       "lastMessageTimestamp": 1698787973122,
       "id": 22
+    },
+    {
+      "senderId": 1,
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "lastMessageTimestamp": 1698788517759,
+      "id": 23
+    },
+    {
+      "senderId": 1,
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "lastMessageTimestamp": 1698788570289,
+      "id": 24
     }
   ],
   "messages": [
@@ -228,6 +242,41 @@
       "authorId": 1,
       "conversationId": 21,
       "id": 64
+    },
+    {
+      "body": "Salut Elodie",
+      "timestamp": 1698788444293,
+      "authorId": 1,
+      "conversationId": 7,
+      "id": 65
+    },
+    {
+      "body": "CA va ? ",
+      "timestamp": 1698788466689,
+      "authorId": 1,
+      "conversationId": 5,
+      "id": 66
+    },
+    {
+      "body": "Ca va ?",
+      "timestamp": 1698788513783,
+      "authorId": 1,
+      "conversationId": 1,
+      "id": 67
+    },
+    {
+      "body": "Tu vas bien ?",
+      "timestamp": 1698788580745,
+      "authorId": 1,
+      "conversationId": 21,
+      "id": 68
+    },
+    {
+      "body": "Oui merci",
+      "timestamp": 1698788592751,
+      "authorId": 1,
+      "conversationId": 1,
+      "id": 69
     }
   ],
   "users": [
