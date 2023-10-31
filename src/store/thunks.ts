@@ -41,7 +41,7 @@ export const actionCreateConversations = createAsyncThunk(
 
 export const actionGetMessages = createAsyncThunk(
   "GET_MESSAGES",
-  async (arg) => {
+  async (arg: string) => {
     const results = await axios(`http://localhost:3005/messages/${arg}`);
     const data = results.data;
     return data;

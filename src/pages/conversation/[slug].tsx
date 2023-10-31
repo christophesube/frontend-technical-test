@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { FormEvent, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { actionCreateMessage, actionGetMessages } from "../../store/thunks";
 import { AppDispatch, RootState } from "../../store/store";
@@ -47,13 +47,17 @@ export default function Page() {
     }
   });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    dispatch(actionCreateMessage(router.query.slug));
+    if (typeof router.query.slug === "string") {
+      dispatch(actionCreateMessage(router.query.slug));
+    }
   };
 
   useEffect(() => {
-    dispatch(actionGetMessages(router.query.slug));
+    if (typeof router.query.slug === "string") {
+      dispatch(actionGetMessages(router.query.slug));
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -74,8 +78,8 @@ export default function Page() {
           {loaded ? (
             messages.map((message) =>
               myId === message.authorId ? (
-                <div className={styles.messages__me}>
-                  <MessageMe key={message.id} {...message} />
+                <div key={message.id} className={styles.messages__me}>
+                  <MessageMe {...message} />
                   <Delete id={message.id} />
                 </div>
               ) : (
