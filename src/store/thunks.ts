@@ -11,7 +11,8 @@ export const actionGetConversations = createAsyncThunk(
     const results = await axios(
       `http://localhost:3005/conversations/${userIdLogged}`
     );
-    return results;
+    const data = results.data;
+    return data;
   }
 );
 
@@ -41,7 +42,8 @@ export const actionGetMessages = createAsyncThunk(
   "GET_MESSAGES",
   async (arg) => {
     const results = await axios(`http://localhost:3005/messages/${arg}`);
-    return results;
+    const data = results.data;
+    return data;
   }
 );
 
@@ -72,13 +74,6 @@ export const actionDeleteMessage = createAsyncThunk(
 
 export const actionGetAllUsers = createAsyncThunk("GET_USERS", async () => {
   const results = await axios("http://localhost:3005/users");
-  return results;
+  const data = results.data;
+  return data;
 });
-
-export const actionDeleteConversations = createAsyncThunk(
-  "DELETE_CONVERSATION",
-  async () => {
-    const results = await axios.delete(`http://localhost:3005/conversation/78`);
-    return results;
-  }
-);

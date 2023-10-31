@@ -149,6 +149,13 @@
       "recipientNickname": "Thibaut",
       "lastMessageTimestamp": 1698785844884,
       "id": 21
+    },
+    {
+      "senderId": 1,
+      "recipientId": "2",
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698787973122,
+      "id": 22
     }
   ],
   "messages": [

@@ -41,7 +41,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     .addCase(actionGetConversations.fulfilled, (state, action) => {
       state.conversationsAreLoaded = true;
       state.conversationsisLoading = false;
-      state.conversations = action.payload.data;
+      state.conversations = action.payload;
     })
     .addCase(actionGetConversations.pending, (state, action) => {
       state.conversationsisLoading = true;
@@ -55,7 +55,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.conversations.push(action.payload.data);
     })
     .addCase(actionGetMessages.fulfilled, (state, action) => {
-      state.messages = action.payload.data;
+      state.messages = action.payload;
       state.messagesAreLoaded = true;
       state.deleteIsOnError = false;
     })
@@ -70,7 +70,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
       state.inputValue = "";
     })
     .addCase(actionGetAllUsers.fulfilled, (state, action) => {
-      state.users = action.payload.data;
+      state.users = action.payload;
     })
     .addCase(actionDeleteMessage.fulfilled, (state, action) => {
       state.deleteIsOnError = false;
