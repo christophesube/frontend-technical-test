@@ -135,6 +135,20 @@
       "recipientNickname": "Elodie",
       "lastMessageTimestamp": 1698780320791,
       "id": 19
+    },
+    {
+      "senderId": 1,
+      "recipientId": "2",
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698783495667,
+      "id": 20
+    },
+    {
+      "senderId": 1,
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "lastMessageTimestamp": 1698785844884,
+      "id": 21
     }
   ],
   "messages": [
@@ -186,6 +200,27 @@
       "authorId": 1,
       "conversationId": 10,
       "id": 61
+    },
+    {
+      "body": "Bonjour !",
+      "timestamp": 1698784844773,
+      "authorId": 1,
+      "conversationId": 5,
+      "id": 62
+    },
+    {
+      "body": "Bonjour",
+      "timestamp": 1698785094910,
+      "authorId": 1,
+      "conversationId": 1,
+      "id": 63
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698785849863,
+      "authorId": 1,
+      "conversationId": 21,
+      "id": 64
     }
   ],
   "users": [

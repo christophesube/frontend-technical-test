@@ -27,5 +27,14 @@
   padding: 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 860px) {
+  .conversationsContainer,
+  .subcontainer {
+    width: 100%;
+  }
+  .subcontainer {
+    height: 100vh;
+    border: none;
+    padding: 0;
+  }
 }

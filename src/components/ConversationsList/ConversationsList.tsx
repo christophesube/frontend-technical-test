@@ -15,8 +15,8 @@ const ConversationsList = () => {
     <div>
       {conversations.map((item) => (
         <Link
-          className={styles.global}
           key={item.id}
+          className={styles.global}
           href={`/conversation/${item.id}`}>
           <Conversation
             name={

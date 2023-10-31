@@ -1,12 +1,9 @@
 import styles from "../../styles/Error.module.css";
 
-const Error = () => {
+const Error = ({ content }) => {
   return (
     <div className={styles.container}>
-      <p>
-        Erreur durant le chargement des données, veuillez réessayer en
-        rafraichissant votre page.
-      </p>
+      <p>{content}</p>
     </div>
   );
 };

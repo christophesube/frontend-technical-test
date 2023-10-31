@@ -11,6 +11,7 @@ import { actionSetinputValue } from "../../store/actions";
 import Loader from "../../components/Loader/Loader";
 import Delete from "../../components/Delete/Delete";
 import Link from "next/link";
+import Error from "../../components/Error/Error";
 
 export default function Page() {
   const router = useRouter();
@@ -30,6 +31,9 @@ export default function Page() {
     (state: RootState) => state.reducerMessages.conversations
   );
   let author: string;
+  const deletedIsOnError = useSelector(
+    (state: RootState) => state.reducerMessages.deleteIsOnError
+  );
 
   // get the name of the other member of the conversation
   conversations.forEach((conversation) => {
@@ -54,6 +58,9 @@ export default function Page() {
   }, []);
   return (
     <div className={styles.messages__container}>
+      {deletedIsOnError && (
+        <Error content='Impossible de supprimer le message veuillez réessayer ultérieurement.' />
+      )}
       <div className={styles.messages__subcontainer}>
         <div className={styles.messages__container_header}>
           <Link href='/'>

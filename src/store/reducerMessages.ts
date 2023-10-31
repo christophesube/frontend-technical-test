@@ -21,6 +21,7 @@ interface initialStateProps {
   inputValue: string;
   users: User[];
   selectedUser: number;
+  deleteIsOnError: boolean;
 }
 
 const initialState: initialStateProps = {
@@ -32,6 +33,7 @@ const initialState: initialStateProps = {
   inputValue: "",
   users: [],
   selectedUser: null,
+  deleteIsOnError: false,
 };
 
 export const reducerMessages = createReducer(initialState, (builder) => {
@@ -55,6 +57,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     .addCase(actionGetMessages.fulfilled, (state, action) => {
       state.messages = action.payload.data;
       state.messagesAreLoaded = true;
+      state.deleteIsOnError = false;
     })
     .addCase(actionSetinputValue, (state, action) => {
       state.inputValue = action.payload;
@@ -69,6 +72,10 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     .addCase(actionGetAllUsers.fulfilled, (state, action) => {
       state.users = action.payload.data;
     })
-    .addCase(actionDeleteMessage.fulfilled, (state, action) => {})
-    .addCase(actionDeleteMessage.rejected, (state, action) => {});
+    .addCase(actionDeleteMessage.fulfilled, (state, action) => {
+      state.deleteIsOnError = false;
+    })
+    .addCase(actionDeleteMessage.rejected, (state) => {
+      state.deleteIsOnError = true;
+    });
 });

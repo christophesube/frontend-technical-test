@@ -5,11 +5,10 @@ import { AppDispatch } from "../../store/store";
 import { useDispatch } from "react-redux";
 import { actionDeleteMessage } from "../../store/thunks";
 
-const Delete = (id: number) => {
+const Delete = ({ id }) => {
   const dispatch = useDispatch() as AppDispatch;
 
   const handleDelete = () => {
-    console.log("deleted message", id);
     dispatch(actionDeleteMessage(id));
   };
 

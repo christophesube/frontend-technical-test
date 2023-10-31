@@ -69,3 +69,19 @@
 .createContainer select:focus {
   background-color: rgb(207, 110, 24);
 }
+
+@media (max-width: 420px) {
+  .container {
+    width: auto;
+  }
+  .subcontainer span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .createContainer {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
