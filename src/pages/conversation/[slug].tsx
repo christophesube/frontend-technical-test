@@ -14,8 +14,12 @@ import Link from "next/link";
 import Error from "../../components/Error/Error";
 
 export default function Page() {
+  let idConv: number;
   const router = useRouter();
-  const idConv = parseInt(router.query.slug);
+  const slug = router.query.slug;
+  if (typeof slug === "string") {
+    idConv = parseInt(slug);
+  }
   const myId = getLoggedUserId();
   const dispatch = useDispatch() as AppDispatch;
   const messages = useSelector(

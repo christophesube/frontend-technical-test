@@ -49,3 +49,9 @@
   align-items: center;
   margin-bottom: 12px;
 }
+
+@media (max-width: 420px) {
+  .messages__container {
+    height: inherit;
+  }
+}

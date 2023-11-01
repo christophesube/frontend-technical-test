@@ -26,13 +26,6 @@
     },
     {
       "senderId": 1,
-      "recipientId": "2",
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698336361686,
-      "id": 4
-    },
-    {
-      "senderId": 1,
       "recipientId": "4",
       "recipientNickname": "Elodie",
       "lastMessageTimestamp": 1698336626656,
@@ -474,13 +467,7 @@
       "conversationId": 6,
       "id": 92
     },
-    {
-      "body": "",
-      "timestamp": 1698789478672,
-      "authorId": 2,
-      "conversationId": 6,
-      "id": 93
-    },
+
     {
       "body": "aze",
       "timestamp": 1698789594793,
@@ -495,13 +482,7 @@
       "conversationId": 1,
       "id": 95
     },
-    {
-      "body": "",
-      "timestamp": 1698789912130,
-      "authorId": 2,
-      "conversationId": 1,
-      "id": 96
-    },
+
     {
       "body": "Hello",
       "timestamp": 1698790266382,
@@ -522,6 +503,13 @@
       "authorId": 2,
       "conversationId": 6,
       "id": 99
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698829304738,
+      "authorId": 1,
+      "conversationId": 2,
+      "id": 100
     }
   ],
   "users": [
