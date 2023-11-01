@@ -6,7 +6,11 @@ import { useRouter } from "next/router";
 
 const Message = (message: Message) => {
   const router = useRouter();
-  const idConv = parseInt(router.query.slug);
+  let idConv: number;
+  const slug = router.query.slug;
+  if (typeof slug === "string") {
+    idConv = parseInt(slug);
+  }
   const conversations = useSelector(
     (state: RootState) => state.reducerMessages.conversations
   );

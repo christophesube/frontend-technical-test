@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { FormEvent, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { actionCreateMessage, actionGetMessages } from "../../store/thunks";
 import { AppDispatch, RootState } from "../../store/store";

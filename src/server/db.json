@@ -47,157 +47,31 @@
     },
     {
       "senderId": 1,
-      "recipientId": "3",
+      "recipientId": 3,
       "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698777872950,
+      "lastMessageTimestamp": 1698868483047,
       "id": 8
     },
     {
       "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698777875097,
+      "recipientId": 4,
+      "recipientNickname": "Elodie",
+      "lastMessageTimestamp": 1698868486022,
       "id": 9
     },
     {
       "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698777875514,
+      "recipientId": 2,
+      "recipientNickname": "Jeremie",
+      "lastMessageTimestamp": 1698868496818,
       "id": 10
     },
     {
       "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698777879580,
+      "recipientId": 3,
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698872901427,
       "id": 11
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698777881005,
-      "id": 12
-    },
-    {
-      "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698779082067,
-      "id": 13
-    },
-    {
-      "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698779845260,
-      "id": 14
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698779856024,
-      "id": 15
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698780084868,
-      "id": 16
-    },
-    {
-      "senderId": 1,
-      "recipientId": 1,
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698780285529,
-      "id": 17
-    },
-    {
-      "senderId": 1,
-      "recipientId": "2",
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698780291478,
-      "id": 18
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698780320791,
-      "id": 19
-    },
-    {
-      "senderId": 1,
-      "recipientId": "2",
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698783495667,
-      "id": 20
-    },
-    {
-      "senderId": 1,
-      "recipientId": 1,
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698785844884,
-      "id": 21
-    },
-    {
-      "senderId": 1,
-      "recipientId": "2",
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698787973122,
-      "id": 22
-    },
-    {
-      "senderId": 1,
-      "recipientId": 1,
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698788517759,
-      "id": 23
-    },
-    {
-      "senderId": 1,
-      "recipientId": 1,
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698788570289,
-      "id": 24
-    },
-    {
-      "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698789019459,
-      "id": 25
-    },
-    {
-      "senderId": 1,
-      "recipientId": "3",
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698789038210,
-      "id": 26
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698789051402,
-      "id": 27
-    },
-    {
-      "senderId": 1,
-      "recipientId": 1,
-      "recipientNickname": "Thibaut",
-      "lastMessageTimestamp": 1698789062409,
-      "id": 28
-    },
-    {
-      "senderId": 2,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698789362446,
-      "id": 29
     }
   ],
   "messages": [
@@ -343,62 +217,6 @@
     },
     {
       "body": "aze",
-      "timestamp": 1698789054335,
-      "authorId": 1,
-      "conversationId": 27,
-      "id": 75
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789058798,
-      "authorId": 1,
-      "conversationId": 24,
-      "id": 76
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789065380,
-      "authorId": 1,
-      "conversationId": 28,
-      "id": 77
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789073103,
-      "authorId": 1,
-      "conversationId": 2,
-      "id": 78
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789077662,
-      "authorId": 1,
-      "conversationId": 22,
-      "id": 79
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789318986,
-      "authorId": 1,
-      "conversationId": 3,
-      "id": 80
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789323147,
-      "authorId": 1,
-      "conversationId": 23,
-      "id": 81
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789328783,
-      "authorId": 1,
-      "conversationId": 24,
-      "id": 82
-    },
-    {
-      "body": "aze",
       "timestamp": 1698789330609,
       "authorId": 1,
       "conversationId": 24,
@@ -433,13 +251,6 @@
       "id": 87
     },
     {
-      "body": "Oui :)",
-      "timestamp": 1698789442357,
-      "authorId": 2,
-      "conversationId": 6,
-      "id": 88
-    },
-    {
       "body": "Ca va ? ",
       "timestamp": 1698789447644,
       "authorId": 2,
@@ -461,28 +272,12 @@
       "id": 91
     },
     {
-      "body": "test",
-      "timestamp": 1698789478546,
-      "authorId": 2,
-      "conversationId": 6,
-      "id": 92
-    },
-
-    {
-      "body": "aze",
-      "timestamp": 1698789594793,
-      "authorId": 2,
-      "conversationId": 22,
-      "id": 94
-    },
-    {
       "body": "Hello",
       "timestamp": 1698789897976,
       "authorId": 2,
       "conversationId": 1,
       "id": 95
     },
-
     {
       "body": "Hello",
       "timestamp": 1698790266382,
@@ -510,6 +305,83 @@
       "authorId": 1,
       "conversationId": 2,
       "id": 100
+    },
+    {
+      "body": "aze",
+      "timestamp": 1698865739012,
+      "authorId": 1,
+      "conversationId": 2,
+      "id": 101
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698865746950,
+      "authorId": 1,
+      "conversationId": 2,
+      "id": 102
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698865750955,
+      "authorId": 1,
+      "conversationId": 5,
+      "id": 103
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698865755701,
+      "authorId": 1,
+      "conversationId": 10,
+      "id": 104
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698865759641,
+      "authorId": 1,
+      "conversationId": 12,
+      "id": 105
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698865764660,
+      "authorId": 1,
+      "conversationId": 26,
+      "id": 106
+    },
+    {
+      "body": "Bonjour Elodie",
+      "timestamp": 1698866492601,
+      "authorId": 1,
+      "conversationId": 30,
+      "id": 107
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698866532916,
+      "authorId": 1,
+      "conversationId": 31,
+      "id": 108
+    },
+    {
+      "body": "Salut Patoche",
+      "timestamp": 1698868528130,
+      "authorId": 1,
+      "conversationId": 8,
+      "id": 110
+    },
+    {
+      "body": "Salut",
+      "timestamp": 1698872883094,
+      "authorId": 1,
+      "conversationId": 9,
+      "id": 111
+    },
+    {
+      "body": "Hello !",
+      "timestamp": 1698872907323,
+      "authorId": 1,
+      "conversationId": 11,
+      "id": 112
     }
   ],
   "users": [

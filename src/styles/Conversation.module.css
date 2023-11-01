@@ -42,7 +42,7 @@
   border-radius: 10px;
   border: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 1rem;
   background-color: rgb(239, 126, 27);
 }
 
@@ -81,7 +81,21 @@
 
 @media (max-width: 860px) {
   .createContainer {
-    flex-direction: column;
     gap: 5px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .createContainer {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+
+  .createContainer select,
+  .createContainer button {
+    font-size: 0.8rem;
   }
 }

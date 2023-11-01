@@ -2,7 +2,6 @@ import styles from "../../styles/Conversation.module.css";
 import avatar from "../../assets/avatar.png";
 import Image from "next/image";
 import { getFrenchMonth } from "../../utils/getFrenchMonth";
-import { getFrenchDate } from "../../utils/getFrenchDate";
 
 const Conversation = ({ name, timestamp }) => {
   if (typeof timestamp == "undefined") {

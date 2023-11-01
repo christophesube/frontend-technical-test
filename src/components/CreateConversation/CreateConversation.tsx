@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../store/store";
+import { AppDispatch, RootState } from "../../store/store";
 import { User } from "../../types/user";
-import { actionSetSelectedUser } from "../../store/actions";
 import { actionCreateConversations } from "../../store/thunks";
 import styles from "../../styles/Conversation.module.css";
 import { useState } from "react";
@@ -9,14 +8,14 @@ import { useState } from "react";
 const CreateConversation = () => {
   const [selectedValue, setSelectedValue] = useState(1);
   const users = useSelector((state: RootState) => state.reducerMessages.users);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch() as AppDispatch;
 
-  const handleChange = (event) => {
-    // dispatch(actionSetSelectedUser(event.target.value));
-    setSelectedValue(event.target.value);
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = parseInt(event.target.value);
+    setSelectedValue(value);
   };
 
-  const handSubmit = (event) => {
+  const handSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(actionCreateConversations(selectedValue));
   };
