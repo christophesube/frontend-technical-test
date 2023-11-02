@@ -1,7 +1,5 @@
-import styles from "../../styles/Loader.module.css";
-
 const Loader = () => {
-  return <div className={styles.loader}></div>;
+  return <div>Les données sont en cours de chargement...</div>;
 };
 
 export default Loader;

@@ -41,13 +41,11 @@ const initialState: initialStateProps = {
 export const reducerMessages = createReducer(initialState, (builder) => {
   builder
     .addCase(actionGetConversations.fulfilled, (state, action) => {
-      state.conversationsAreLoaded = true;
       state.conversationsisLoading = false;
       state.conversations = action.payload;
     })
     .addCase(actionGetConversations.pending, (state, action) => {
       state.conversationsisLoading = true;
-      state.conversationsAreLoaded = false;
     })
     .addCase(actionGetConversations.rejected, (state, action) => {
       state.conversationsAreLoaded = false;
