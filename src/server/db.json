@@ -26,52 +26,31 @@
     },
     {
       "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698336626656,
-      "id": 5
-    },
-    {
-      "senderId": 1,
-      "recipientId": "2",
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698777867315,
-      "id": 6
-    },
-    {
-      "senderId": 1,
-      "recipientId": "4",
-      "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698777869651,
-      "id": 7
+      "recipientId": 1,
+      "recipientNickname": "Thibaut",
+      "lastMessageTimestamp": 1698948243661,
+      "id": 4
     },
     {
       "senderId": 1,
       "recipientId": 3,
       "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698868483047,
-      "id": 8
+      "lastMessageTimestamp": 1698948315244,
+      "id": 5
+    },
+    {
+      "senderId": 1,
+      "recipientId": 3,
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1698948345254,
+      "id": 6
     },
     {
       "senderId": 1,
       "recipientId": 4,
       "recipientNickname": "Elodie",
-      "lastMessageTimestamp": 1698868486022,
-      "id": 9
-    },
-    {
-      "senderId": 1,
-      "recipientId": 2,
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698868496818,
-      "id": 10
-    },
-    {
-      "senderId": 1,
-      "recipientId": 3,
-      "recipientNickname": "Patrick",
-      "lastMessageTimestamp": 1698872901427,
-      "id": 11
+      "lastMessageTimestamp": 1698948352465,
+      "id": 7
     }
   ],
   "messages": [
@@ -104,284 +83,11 @@
       "body": "Bonjour c'est le premier message de la seconde conversation"
     },
     {
-      "body": "Tu vas bien ? ",
-      "timestamp": 1697990960166,
-      "authorId": 1,
-      "conversationId": 3,
-      "id": 59
-    },
-    {
-      "body": "Salut Jeremie comment tu vas ?",
-      "timestamp": 1698336371869,
-      "authorId": 1,
-      "conversationId": 4,
-      "id": 60
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698337243970,
-      "authorId": 1,
-      "conversationId": 10,
-      "id": 61
-    },
-    {
-      "body": "Bonjour !",
-      "timestamp": 1698784844773,
+      "body": "Salut Patrick",
+      "timestamp": 1698948319873,
       "authorId": 1,
       "conversationId": 5,
-      "id": 62
-    },
-    {
-      "body": "Bonjour",
-      "timestamp": 1698785094910,
-      "authorId": 1,
-      "conversationId": 1,
-      "id": 63
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698785849863,
-      "authorId": 1,
-      "conversationId": 21,
-      "id": 64
-    },
-    {
-      "body": "Salut Elodie",
-      "timestamp": 1698788444293,
-      "authorId": 1,
-      "conversationId": 7,
-      "id": 65
-    },
-    {
-      "body": "CA va ? ",
-      "timestamp": 1698788466689,
-      "authorId": 1,
-      "conversationId": 5,
-      "id": 66
-    },
-    {
-      "body": "Ca va ?",
-      "timestamp": 1698788513783,
-      "authorId": 1,
-      "conversationId": 1,
-      "id": 67
-    },
-    {
-      "body": "Tu vas bien ?",
-      "timestamp": 1698788580745,
-      "authorId": 1,
-      "conversationId": 21,
-      "id": 68
-    },
-    {
-      "body": "Oui merci",
-      "timestamp": 1698788592751,
-      "authorId": 1,
-      "conversationId": 1,
-      "id": 69
-    },
-    {
-      "body": "Hey !",
-      "timestamp": 1698788659613,
-      "authorId": 1,
-      "conversationId": 6,
-      "id": 70
-    },
-    {
-      "body": "Hola",
-      "timestamp": 1698788683416,
-      "authorId": 1,
-      "conversationId": 24,
-      "id": 71
-    },
-    {
-      "body": "HEllo",
-      "timestamp": 1698788954352,
-      "authorId": 1,
-      "conversationId": 23,
-      "id": 72
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698788961012,
-      "authorId": 1,
-      "conversationId": 23,
-      "id": 73
-    },
-    {
-      "body": "Bonjour",
-      "timestamp": 1698789043587,
-      "authorId": 1,
-      "conversationId": 26,
-      "id": 74
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698789330609,
-      "authorId": 1,
-      "conversationId": 24,
-      "id": 83
-    },
-    {
-      "body": "Ca va ?",
-      "timestamp": 1698789348642,
-      "authorId": 2,
-      "conversationId": 1,
-      "id": 84
-    },
-    {
-      "body": "Hey",
-      "timestamp": 1698789357548,
-      "authorId": 2,
-      "conversationId": 4,
-      "id": 85
-    },
-    {
-      "body": "Tu vas bien ? ",
-      "timestamp": 1698789366963,
-      "authorId": 2,
-      "conversationId": 29,
-      "id": 86
-    },
-    {
-      "body": "Oui Merci",
-      "timestamp": 1698789372557,
-      "authorId": 2,
-      "conversationId": 20,
-      "id": 87
-    },
-    {
-      "body": "Ca va ? ",
-      "timestamp": 1698789447644,
-      "authorId": 2,
-      "conversationId": 4,
-      "id": 89
-    },
-    {
-      "body": "Tu me réponds pas ? ",
-      "timestamp": 1698789457700,
-      "authorId": 2,
-      "conversationId": 1,
-      "id": 90
-    },
-    {
-      "body": "Ca va ?",
-      "timestamp": 1698789467081,
-      "authorId": 2,
-      "conversationId": 6,
-      "id": 91
-    },
-    {
-      "body": "Hello",
-      "timestamp": 1698789897976,
-      "authorId": 2,
-      "conversationId": 1,
-      "id": 95
-    },
-    {
-      "body": "Hello",
-      "timestamp": 1698790266382,
-      "authorId": 2,
-      "conversationId": 18,
-      "id": 97
-    },
-    {
-      "body": "Ca va ? ",
-      "timestamp": 1698790275282,
-      "authorId": 2,
-      "conversationId": 20,
-      "id": 98
-    },
-    {
-      "body": "Coucou",
-      "timestamp": 1698790330370,
-      "authorId": 2,
-      "conversationId": 6,
-      "id": 99
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698829304738,
-      "authorId": 1,
-      "conversationId": 2,
-      "id": 100
-    },
-    {
-      "body": "aze",
-      "timestamp": 1698865739012,
-      "authorId": 1,
-      "conversationId": 2,
-      "id": 101
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698865746950,
-      "authorId": 1,
-      "conversationId": 2,
-      "id": 102
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698865750955,
-      "authorId": 1,
-      "conversationId": 5,
-      "id": 103
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698865755701,
-      "authorId": 1,
-      "conversationId": 10,
-      "id": 104
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698865759641,
-      "authorId": 1,
-      "conversationId": 12,
-      "id": 105
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698865764660,
-      "authorId": 1,
-      "conversationId": 26,
-      "id": 106
-    },
-    {
-      "body": "Bonjour Elodie",
-      "timestamp": 1698866492601,
-      "authorId": 1,
-      "conversationId": 30,
-      "id": 107
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698866532916,
-      "authorId": 1,
-      "conversationId": 31,
-      "id": 108
-    },
-    {
-      "body": "Salut Patoche",
-      "timestamp": 1698868528130,
-      "authorId": 1,
-      "conversationId": 8,
-      "id": 110
-    },
-    {
-      "body": "Salut",
-      "timestamp": 1698872883094,
-      "authorId": 1,
-      "conversationId": 9,
-      "id": 111
-    },
-    {
-      "body": "Hello !",
-      "timestamp": 1698872907323,
-      "authorId": 1,
-      "conversationId": 11,
-      "id": 112
+      "id": 5
     }
   ],
   "users": [

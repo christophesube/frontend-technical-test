@@ -22,6 +22,7 @@ interface initialStateProps {
   users: User[];
   selectedUser: number;
   deleteIsOnError: boolean;
+  newConversationId: number;
 }
 
 const initialState: initialStateProps = {
@@ -34,6 +35,7 @@ const initialState: initialStateProps = {
   users: [],
   selectedUser: null,
   deleteIsOnError: false,
+  newConversationId: null,
 };
 
 export const reducerMessages = createReducer(initialState, (builder) => {
@@ -53,6 +55,7 @@ export const reducerMessages = createReducer(initialState, (builder) => {
     })
     .addCase(actionCreateConversations.fulfilled, (state, action) => {
       state.conversations.push(action.payload);
+      state.newConversationId = action.payload.id;
     })
     .addCase(actionGetMessages.fulfilled, (state, action) => {
       state.messages = action.payload;
