@@ -9,7 +9,7 @@ import Loader from "../components/Loader/Loader";
 import CreateConversation from "../components/CreateConversation/CreateConversation";
 
 const Home = (): ReactElement => {
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useDispatch() as AppDispatch;
   const conversationAreLoaded = useSelector(
     (state: RootState) => state.reducerMessages.conversationsAreLoaded
   );
