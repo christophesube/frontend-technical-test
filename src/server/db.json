@@ -26,9 +26,9 @@
     },
     {
       "senderId": 1,
-      "recipientId": 2,
-      "recipientNickname": "Jeremie",
-      "lastMessageTimestamp": 1698950767559,
+      "recipientId": 3,
+      "recipientNickname": "Patrick",
+      "lastMessageTimestamp": 1699445892470,
       "id": 4
     }
   ],
@@ -62,8 +62,8 @@
       "body": "Bonjour c'est le premier message de la seconde conversation"
     },
     {
-      "body": "Salut !",
-      "timestamp": 1698950771272,
+      "body": "Hello Patrick !",
+      "timestamp": 1699445897734,
       "authorId": 1,
       "conversationId": 4,
       "id": 5

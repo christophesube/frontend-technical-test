@@ -18,7 +18,9 @@ const Home = (): ReactElement => {
   );
 
   useEffect(() => {
-    dispatch(actionGetConversations());
+    if (!conversationAreLoaded) {
+      dispatch(actionGetConversations());
+    }
     dispatch(actionGetAllUsers());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
